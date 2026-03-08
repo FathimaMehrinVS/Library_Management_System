@@ -90,24 +90,36 @@ while ch!=7:
         case 1:
             bid=input("Enter the book id: ")
             btitle=input("Enter the book title: ")
+            if btitle=='' or bid =='':
+                print("Enter a valid input")
+                break
             book=Book(bid,btitle,None,False)
             libraryitems.append(book)
             print("\nBook added successfully")
         case 2:
             jid=input("Enter the journal id: ")
             jtitle=input("Enter the journal title: ")
+            if jtitle=='' or jid =='':
+                print("Enter a valid input")
+                break
             journal=Journal(jid,jtitle,None,False)
             libraryitems.append(journal)
             print("\nJournal added successfully")
         case 3:
             did=input("Enter the digitalmedia id: ")
             dtitle=input("Enter the digitalmedia title: ")
+            if dtitle=='' or did =='':
+                print("Enter a valid input")
+                break
             digital=DigitalMedia(did,dtitle,None,False)
             libraryitems.append(digital)
             print("\nDigital media added successfully")
         case 4:
             uid=input("Enter the user id: ")
             uname=input("Enter the user name: ")
+            if uid=='' or uname =='':
+                print("Enter a valid input")
+                break
             user=LibraryUser(uid,uname)
             users.append(user)
             print("\nUser added successfully")
