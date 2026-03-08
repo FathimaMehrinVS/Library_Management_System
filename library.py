@@ -92,7 +92,7 @@ while ch!=7:
             btitle=input("Enter the book title: ")
             if btitle=='' or bid =='':
                 print("Enter a valid input")
-                break
+                continue
             book=Book(bid,btitle,None,False)
             libraryitems.append(book)
             print("\nBook added successfully")
@@ -101,7 +101,7 @@ while ch!=7:
             jtitle=input("Enter the journal title: ")
             if jtitle=='' or jid =='':
                 print("Enter a valid input")
-                break
+                continue
             journal=Journal(jid,jtitle,None,False)
             libraryitems.append(journal)
             print("\nJournal added successfully")
@@ -110,7 +110,7 @@ while ch!=7:
             dtitle=input("Enter the digitalmedia title: ")
             if dtitle=='' or did =='':
                 print("Enter a valid input")
-                break
+                continue
             digital=DigitalMedia(did,dtitle,None,False)
             libraryitems.append(digital)
             print("\nDigital media added successfully")
@@ -119,7 +119,7 @@ while ch!=7:
             uname=input("Enter the user name: ")
             if uid=='' or uname =='':
                 print("Enter a valid input")
-                break
+                continue
             user=LibraryUser(uid,uname)
             users.append(user)
             print("\nUser added successfully")
